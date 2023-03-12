@@ -1,9 +1,10 @@
-body{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin: 0;
+:root{
+    --black: rgb(16, 16, 16);
+    --white: white;
 }
 
-h2,h5,hr{
+body, h2, h5, hr{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0 auto;
     padding: 0 auto;
 }
@@ -13,27 +14,21 @@ textarea{
     overflow: hidden;
 }
 
-hr{
-    height: 2px;
-    background-color: black;
-    border: none;
-}
-
 .container{
     text-align: center;
     width: 450px;
-    background-color:rgb(255, 255, 255);
-    color: rgb(0, 0, 31);
+    background-color:var(--white);
+    color: var(--black);
     position: relative;
 }
 
 .container-header{
-    background-color: rgb(16, 16, 16);
+    background-color: var(--black);
     color: rgb(255, 255, 255);
 }
 
 .container-content{
-    border: 5px solid rgb(16, 16, 16);
+    border: 5px solid var(--black);
 }
 
 .github{
@@ -51,4 +46,39 @@ hr{
 
 .input_notepad{
     display: grid;
+}
+
+.footer{
+    background-color: var(--black);
+    color: white;
+    margin: auto;
+    text-align: center;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: column;
+    border-top: 5px solid var(--black);
+}
+
+.previousButton, .nextButton{
+    width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+    margin: auto;
+    cursor: pointer;
+}
+
+.previousButton{
+	border-right: 20px solid var(--white);
+    margin-right: 0;
+}
+
+.nextButton{
+	border-left: 20px solid var(--white);
+    margin-left: 0;
+}
+
+#pageID{
+    font-size: 12px;
+    margin: auto;
 }

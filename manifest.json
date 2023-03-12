@@ -1,0 +1,11 @@
+{
+    "name": "Lightweight notepad",
+    "version": "1.0.0",
+    "description": "Take notes on browser with this lightweight notepad.",
+    "manifest_version": 3,
+    "author": "Domen Pahole",
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "Lightweight notepad"
+    }
+}
