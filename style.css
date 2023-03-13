@@ -59,7 +59,7 @@ textarea{
     border-top: 5px solid var(--black);
 }
 
-.previousButton, .nextButton{
+#previousButton, #nextButton{
     width: 0;
 	height: 0;
 	border-top: 10px solid transparent;
@@ -68,12 +68,12 @@ textarea{
     cursor: pointer;
 }
 
-.previousButton{
+#previousButton{
 	border-right: 20px solid var(--white);
     margin-right: 0;
 }
 
-.nextButton{
+#nextButton{
 	border-left: 20px solid var(--white);
     margin-left: 0;
 }

@@ -9,3 +9,8 @@ Chrome extension for lightweight notepad.
     * Created the whole project
     * Created extension layout
     * Created all the other necessary files
+- 13.3.2023
+    * Added logic to scroll through pages
+    * Added logic to save pages
+    * Added logic to load last page and content from saved pages
+    * Fixed notepad content value parsing
