@@ -14,3 +14,5 @@ Chrome extension for lightweight notepad.
     * Added logic to save pages
     * Added logic to load last page and content from saved pages
     * Fixed notepad content value parsing
+- 14.3.2023
+    * Added _garbage_, to clear your notepad's current notes and storage

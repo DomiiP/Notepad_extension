@@ -31,13 +31,31 @@ textarea{
     border: 5px solid var(--black);
 }
 
-.github{
+.github, .settings, .garbage{
+    position:absolute;
+    filter: invert(100%);
+    cursor:pointer;
+}
+
+.github, .settings{
+    top: 7px;
     width: 30px;
     height: 30px;
-    position:absolute;
-    top: 1px;
-    filter: invert(100%);
+}
+
+.garbage{
+    bottom: 5px;
+    width: 20px;
+    height: 20px;
+    left: 10px;
+}
+
+.github{
     right: 11px;
+}
+
+.settings{
+    left: 11px;
 }
 
 #notepad{

@@ -6,9 +6,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="container">
         <div class="container-header">
+            <!-- https://www.flaticon.com/free-icon/garbage_98090 -->
             <a href="https://github.com/DomiiP/Notepad_extension" target="_blank"><img src="github.png" class = "github"></a>
+            <img src="settings.png" class = "settings" id = "settings">
             <h2>Lightweight notepad extension</h2>
             <h5>Chrome extension by Domii</h5>
         </div>
@@ -17,11 +19,12 @@
             <textarea name="notepad" id="notepad" cols="30" rows="10"></textarea>
             </div>
             <div class="footer">
-            <div class="previous">
-                <div id="previousButton"></div>
-            </div>
-            <label id="pageID"></label>
-            <div id="nextButton"></div>
+                <img src="garbage.png" class="garbage" id="garbage">
+                <div class="previous">
+                    <div id="previousButton"></div>
+                </div>
+                <label id="pageID"></label>
+                <div id="nextButton"></div>
             </div>
         </div>
     </div>

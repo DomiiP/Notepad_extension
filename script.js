@@ -50,3 +50,21 @@ function saveState(){
     var pagenumber = document.getElementById("pageID").textContent[0];
     localStorage.setItem('page'+ pagenumber,document.getElementById("notepad").value);
 }
+
+// Settings
+
+var settings = document.getElementById("settings");
+settings.addEventListener('mouseover', function(){
+    document.getElementById("container").style.opacity = 0.3;
+    document.getElementById("settings").style.opacity = 1;
+});
+settings.addEventListener('mouseout', function(){
+    document.getElementById("container").style.opacity = 1;
+});
+
+// Garbage
+var garbage = document.getElementById("garbage");
+garbage.addEventListener('click', function(){
+    window.localStorage.clear();    
+    document.getElementById("notepad").value = "";
+})
