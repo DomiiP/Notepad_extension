@@ -65,6 +65,12 @@ settings.addEventListener('mouseout', function(){
 // Garbage
 var garbage = document.getElementById("garbage");
 garbage.addEventListener('click', function(){
+    window.localStorage.removeItem('page'+ localStorage.getItem('currentPage'));
+    document.getElementById("notepad").value = "";
+})
+
+var garbage_all = document.getElementById("garbage_all");
+garbage_all.addEventListener('click', function(){
     window.localStorage.clear();    
     document.getElementById("notepad").value = "";
 })

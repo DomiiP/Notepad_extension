@@ -31,9 +31,8 @@ textarea{
     border: 5px solid var(--black);
 }
 
-.github, .settings, .garbage{
+.github, .settings, .garbage, .garbage_all{
     position:absolute;
-    filter: invert(100%);
     cursor:pointer;
 }
 
@@ -41,13 +40,23 @@ textarea{
     top: 7px;
     width: 30px;
     height: 30px;
+    filter: invert(100%);
 }
 
-.garbage{
+.garbage, .garbage_all{
     bottom: 5px;
     width: 20px;
     height: 20px;
-    left: 10px;
+}
+
+.garbage{
+    left: 25px;
+    filter: invert(100%);
+}
+
+.garbage_all{
+    left: 5px;
+    filter:saturate(100);
 }
 
 .github{
