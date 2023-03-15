@@ -3,10 +3,13 @@
     --white: white;
 }
 
-body, h2, h5, hr{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+body, h2, h3, h5, hr{
     margin: 0 auto;
     padding: 0 auto;
+}
+
+hr{
+    border: 2px solid var(--black);
 }
 
 textarea{
@@ -22,6 +25,17 @@ textarea{
     position: relative;
 }
 
+.extra-container{
+    position:absolute;
+    height: 161px;
+    width:  225px;
+    border: 5px solid var(--black);
+    left: 110px;}
+
+.extra-container-settings{margin-top: 6px;}
+
+#ex-container{display:none;}
+
 .container-header{
     background-color: var(--black);
     color: rgb(255, 255, 255);
@@ -29,6 +43,77 @@ textarea{
 
 .container-content{
     border: 5px solid var(--black);
+}
+
+/*Chrome*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    input[type='range'] {
+      border: 1px solid var(--black);
+      overflow: hidden;
+      width: 150px;
+      -webkit-appearance: none;
+      background-color: var(--white);
+    }
+    
+    input[type='range']::-webkit-slider-runnable-track {
+      height: 10px;
+      -webkit-appearance: none;
+      color: var(--black);
+      margin-top: -1px;
+    }
+    
+    input[type='range']::-webkit-slider-thumb {
+      width: 10px;
+      -webkit-appearance: none;
+      height: 10px;
+      cursor: ew-resize;
+      background: gray;
+      box-shadow: -80px 0 0 80px var(--black);
+    }
+    /*FF*/
+    input[type="range"]::-moz-range-progress {
+    background-color: var(--black); 
+  }
+  input[type="range"]::-moz-range-track {  
+    background-color: var(--white);
+  }
+  /*IE*/
+  input[type="range"]::-ms-fill-lower {
+    background-color: var(--black); 
+  }
+  input[type="range"]::-ms-fill-upper {  
+    background-color: var(--white);
+  }
+}
+
+.preffered-resolution-text{
+    font-size: 8px;
+    word-spacing: 13px;
+    margin-bottom: 5px;
+}
+
+.font-type-container{
+    font-size: 10px;
+    display:flex;
+    justify-content: space-between;
+    margin: 3px 20px 2px 20px;
+}
+
+.font{cursor:pointer;}
+
+#font1{
+    font-family:'Franklin Gothic Medium';
+    /* border: 1px solid var(--black); */
+}
+#font2{
+    font-family:'Trebuchet MS';
+}
+#font3{
+    font-family:'Impact';
+}
+
+.credits-section{
+    font-size: 10px;
 }
 
 .github, .settings, .garbage, .garbage_all{
@@ -69,6 +154,7 @@ textarea{
 
 #notepad{
     resize:vertical;
+    font-size:14px; 
 }
 
 .input_notepad{

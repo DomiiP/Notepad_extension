@@ -17,3 +17,7 @@ Chrome extension for lightweight notepad.
 - 14.3.2023
     * Added _garbage_, to clear your notepad's current notes and storage
     * Modified notepad clearing logic, so now you can delete all or just one page in notepad
+- 15.3.2023
+    * Added _settings_ on notepad
+    * Added _font size_ changer in _settings_
+    * Added _font type_ changer in _settings_

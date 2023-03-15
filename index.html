@@ -15,6 +15,30 @@
             <h5>Chrome extension by Domii</h5>
         </div>
         <div class="container-content">
+            <div class="extra-container" id = ex-container>
+                <h3 id="extra-container-header">Settings</h3>
+                <hr>
+                <!-- With extra container only one of these will be active at a time -->
+                <div class="extra-container-settings">
+                    <!-- Prefered resolution -->
+                    <h5>Font size</h5>
+                    <input type="range" id="preffered-resolution" value="2" min="1" max="5">
+                        <!-- 75% 100% 125% 150% 175% -->
+                    <div class="preffered-resolution-text"> 10px 12px 14px 16px 18px</div>
+                    <h5>Font type</h5>
+                    <div class="font-type-container">
+                        <div class="font" id = "font1">Franklin Gothic</div>
+                        <div class="font" id = "font2">Trebuchet MS</div>
+                        <div class="font" id = "font3">Impact</div>
+                    </div>
+                    <h5>Credits</h5>
+                    <div class="credits-section">
+                        Pictures are made by me and from freepix. <br>
+                        Made by Domii.
+                    </div>
+                </div>
+                <div class="extra-container-delete"></div>
+            </div>
             <div class="input_notepad">
             <textarea name="notepad" id="notepad" cols="30" rows="10"></textarea>
             </div>
