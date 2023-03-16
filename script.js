@@ -25,6 +25,17 @@ if (height != null){
 if (localStorage.getItem('font') != null){
     document.body.style.fontFamily = localStorage.getItem('font');
     document.getElementById('notepad').style.fontFamily = localStorage.getItem('font');
+    switch(localStorage.getItem('font')){
+        case 'Franklin Gothic Medium':
+            document.getElementById('font1').style.border = '1px solid var(--black)';
+            break;
+        case 'rebuchet MS':
+            document.getElementById('font2').style.border = '1px solid var(--black)';
+            break;
+        case 'Impact':
+            document.getElementById('font3').style.border = '1px solid var(--black)';
+            break;
+    }
 }  // You set default font here..
 else{document.body.style.fontFamily = 'Franklin Gothic Medium';
 document.getElementById('notepad').style.fontFamily = 'Franklin Gothic Medium';}
@@ -131,24 +142,23 @@ notepad.addEventListener('onresize', function(){
 // TODO
 // const resize = new ResizeObserver();
 
-// Font type
+// Font type - could probably be optimized
 
 fonts[0].addEventListener('click',function(){
-    let str = 'Franklin Gothic Medium';
-    localStorage.setItem('font',str);
-    document.body.style.fontFamily = str;
-    document.getElementById("notepad").style.fontFamily = str;
+    setFont('Franklin Gothic Medium', 'font1', 'font2', 'font3');
 });
 fonts[1].addEventListener('click', function(){
-    let str = 'rebuchet MS';
-    localStorage.setItem('font',str);
-    document.body.style.fontFamily = str;
-    document.getElementById("notepad").style.fontFamily = str;
-
+    setFont('rebuchet MS', 'font2', 'font1', 'font3');
 });
 fonts[2].addEventListener('click', function(){
-    let str = 'Impact';
+    setFont('Impact', 'font3', 'font1', 'font2');
+});
+
+function setFont(str,font, del_font1, del_font2){
     localStorage.setItem('font',str);
     document.body.style.fontFamily = str;
     document.getElementById("notepad").style.fontFamily = str;
-});
+    document.getElementById(font).style.border = '1px solid var(--black)';
+    document.getElementById(del_font1).style.border = "";
+    document.getElementById(del_font2).style.border = "";
+}
