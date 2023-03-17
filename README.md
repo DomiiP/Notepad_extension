@@ -5,6 +5,8 @@ Chrome extension for lightweight notepad.
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-20)
 
 #### Changelog:
+- 17.3.2023
+    * Added my own _github_ picture
 - 16.3.2023
     * Optimised _javascript_ functions
     * Added border for chosen _font_
